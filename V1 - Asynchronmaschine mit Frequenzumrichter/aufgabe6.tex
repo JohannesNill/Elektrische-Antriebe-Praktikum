@@ -1,9 +1,12 @@
 \chapter{}
 
 \section{}
-
-\section{}
-
+In dieser Aufgabe ist das in der Aufgabe 3 erstellte Subsystem im entsprechenden Block der U/f-Steuerung einzusetzen und deren Implementierung zu testen.\\
+Die Ausgangsfrequenz des Umrichters haben wir dabei in 10 Hz-Schritten von 0 Hz bis 100 Hz eingestellt. Die Werte der Ausgangsspannung konnten wir auf Bedienoberfläche ablesen. Wir haben sie mit der Ausgangsfrequenz in eine Tabelle eingetragen und in einem Diagramm dargestellt (Abbildung \ref{fig:6b:UL}). Um die Ausgangsspannung als Effektivwert der Außenleiterspannung darzustellen, haben wir sie nach der (\ref{eq:6:u}) umgerechnet.
+\begin{equation}
+	U = U_{a}\frac{\sqrt{3}}{\sqrt{2}}
+	\label{eq:6:u}
+\end{equation}
 \begin{figure}[h]
 	\centering
 	\input{./Bilder/figAufgabe6a.tex}
@@ -12,20 +15,38 @@
 \end{figure}
 
 
-\section{}
 
+\section{}
+Im zweiten Aufgabenteil soll der prinzipiellen Verlauf des Betrags der Statorflussverkettung $ \psi_{1} $ und des Kippmoments $ M_{K} $ im Bereich f1 2 [0 100 Hz] dargestellt werden.\\
+Die dabei verwendeten Motorparameter sind:
+\begin{center}
+	$ L_{\mu} = 785.5mH $ \hspace{2cm} $ L_{\sigma} = 209.8mH $
+\end{center}
+Die Statorflussverkettung $ \psi_{1} $ haben wir mit der Gleichung (\ref{eq:6:psi}) berechnet.
+\begin{equation}
+	\psi_{1} = \frac{U_{1}}{\Omega_{1}}
+	\label{eq:6:psi}
+\end{equation}
+Der Verlauf des Betrags der Statorflussverkettung $ \psi_{1} $ ist in der Abbildung \ref{fig:6c:psi} dargestellt. Der Verlauf des Kippmoments $ M_{K} $ wird in der Abbildung \ref{fig:6d:Momente} dargestellt.
 \begin{figure}[h]
 	\centering
 	\input{./Bilder/figAufgabe6b.tex}
-	\caption{Statorflussverkettung $ \psi_{1k} $ über Statorfrequenz $ f_{1} $}
-	\label{fig:6c:psi}
+	\caption{Statorflussverkettung $ \psi_{1} $ über Statorfrequenz $ f_{1} $}
+	\label{fig:6b:psi}
 \end{figure}
 
-\section{}
 
+
+\section{}
+Im letzten Aufgabenteil soll nun der Verlauf des Drehmoments $ M_{Mi}(I_{1N}) $ des Motors zum Verlauf des Kippmoments $ M_{K} $ eingezeichnet werden.\\
+Das Drehmoment $ M_{Mi}(I_{1N}) $ wurde mit (\ref{eq:6b:mmi}) berechnet. Es wurde dabei angenommen, dass der Motor bei $ cos\varphi = 0.7 $ betrieben wird. 
+\begin{equation}
+	M_{Mi} = \frac{3}{2}Z_{P}\frac{U_{1k}}{\Omega_{1}}I_{1N}cos\varphi
+	\label{eq:6b:mmi}
+\end{equation}
 \begin{figure}[h]
 	\centering
 	\input{./Bilder/figAufgabe6c.tex}
 	\caption{Kippmoment $ M_{K} $ und inneres Moment $ M_{Mi} $ über Statorfrequenz $ f_{1} $}
-	\label{fig:6d:Momente}
+	\label{fig:6c:Momente}
 \end{figure}

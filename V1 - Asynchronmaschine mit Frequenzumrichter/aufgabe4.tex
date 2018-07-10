@@ -1,8 +1,8 @@
 \chapter{}
 \section{}
-Es soll anhand der Angaben auf dem Leistungsschild die Polpaarzahl der Asynchronmaschine bestimmt werden. Dazu sollen nun Überlegungen angestellt werden. Auf dem Typenschild finden sich Angaben über die Nenndrehzahl N, die Frequenz f. Mit diesen Daten kann die Polpaarzahl näherungsweise bestimmt werden.
+Es soll anhand der Angaben auf dem Leistungsschild die Polpaarzahl der Asynchronmaschine bestimmt werden. Dazu sollen nun Überlegungen angestellt werden. Auf dem Typenschild finden sich Angaben über die Nenndrehzahl N, die Frequenz f. Mit diesen Daten kann die Polpaarzahl näherungsweise bestimmt werden. Logischerweise muss die Polpaarzahl ganzzahlig sein, daher wird hier die Ganzzahloperation mit durchgeführt.
 \begin{equation}
-	Z_{P} = 60\frac{f}{N}
+	Z_{P} = \left[60\frac{f_{N}}{N_{N}}\right]
 \end{equation}
 Der Faktor 60 kommt daher zustande, da die Drehzahl von $ s^{-1} $ in $ min^{-1} $ umgerechnet werden muss. Die Asynchronmaschine weist einen Schlupf auf, ohne diesen würde sie gebremst werden. Aufgrund dieses Schlupfes ist die Drehzahl auf dem Typenschild geringer als die Drehfelddrehzahl. Deshalb erhalten wir keinen ganzzahligen Wert für die  Polpaarzahl. Das ist jedoch unzulässig, da es nur ganzzahlige Werte geben darf, weshalb hier auf die nächste ganzzahlige Anzahl abgerundet wird.
 
@@ -13,7 +13,7 @@ Anhand der zuvor getroffenen Überlegungen soll nun die Polpaarzahl der im Labor
 \end{center}
 Somit ergibt sich folgende Polpaarzahl:
 \begin{equation}
-	Z_{P} = 60\frac{50Hz}{1370min^{-1}} = 2.19 \approx 2
+	Z_{P} = \left[60\frac{50Hz}{1370min^{-1}}\right] = 2
 \end{equation}
 
 \section{}
