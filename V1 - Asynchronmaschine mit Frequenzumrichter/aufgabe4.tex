@@ -1,6 +1,6 @@
 \chapter{}
 \section{}
-Es soll anhand der Angaben auf dem Leistungsschild die Polpaarzahl der Asynchronmaschine bestimmt werden. Dazu sollen nun Überlegungen angestellt werden. Auf dem Typenschild finden sich Angaben über die Nenndrehzahl N, die Frequenz f. Mit diesen Daten kann die Polpaarzahl näherungsweise bestimmt werden. Logischerweise muss die Polpaarzahl ganzzahlig sein, daher wird hier die Ganzzahloperation mit durchgeführt.
+Es soll anhand der Angaben auf dem Leistungsschild (zu sehen in Abbildung \ref{fig:4c:typenschild}) die Polpaarzahl der Asynchronmaschine bestimmt werden. Dazu sollen nun Überlegungen angestellt werden. Auf dem Typenschild finden sich Angaben über die Nenndrehzahl N, die Frequenz f. Mit diesen Daten kann die Polpaarzahl näherungsweise bestimmt werden. Logischerweise muss die Polpaarzahl ganzzahlig sein, daher wird hier die Ganzzahloperation mit durchgeführt.
 \begin{equation}
 	Z_{P} = \left[60\frac{f_{N}}{N_{N}}\right]
 \end{equation}
@@ -21,9 +21,9 @@ Die Aufgabe besteht nun darin, das Nennmoment, den Wirkungsgrad im Nennpunkt der
 \begin{equation}
 	M_{N} = \frac{P}{\Omega_{N}} = \frac{0.37kW}{2\pi\frac{1370}{60}\frac{1}{s}} \approx 2.56Nm
 \end{equation}
-Um den Wirkungsgrad zu bestimmen, muss nach Definition die abgegebene Leistung durch die zugeführte Leistung geteilt werden. Der Wirkungsgrad der sich ergibt liegt bei 0,87. Logischerweise ist dieser <1, da es ja immer zu Verlusten in der Maschine kommt.
+Um den Wirkungsgrad zu bestimmen, muss nach Definition die abgegebene Leistung durch die zugeführte Leistung geteilt werden. Der Wirkungsgrad liegt bei 0.50 - dieser muss <1 sein, da es ja immer zu Verlusten in der Maschine kommt.
 \begin{equation}
-	\eta_{N} = \frac{P_{ab}}{P_{zu}} =  \frac{P}{UIcos\varphi} = \frac{370W}{400V*1.06A*cos(0.74)} \approx 0,87
+	\eta_{N} = \frac{P_{ab}}{P_{zu}} =  \frac{P}{\sqrt{3}UIcos\varphi} = \frac{370W}{\sqrt{3}*400V*1.06A*cos(0.74)} \approx 0.50
 \end{equation}
 \begin{figure}[h]
 	\centering
